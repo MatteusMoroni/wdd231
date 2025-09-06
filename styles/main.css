@@ -1,0 +1,277 @@
+/* General Styles & Mobile First (small.css) */
+:root {
+    --primary-color: #003366; /* Deep Blue */
+    --secondary-color: #f4f4f4; /* Light Gray */
+    --accent-color: #007BFF; /* Bright Blue */
+    --text-color: #333;
+    --card-bg: #ffffff;
+    --completed-bg: #e6f7ff; /* Light blue for completed courses */
+    --completed-border: #91d5ff;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.logo svg {
+    width: 40px;
+    height: 40px;
+}
+
+.logo-name {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+#menu-button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+#menu-button svg {
+    width: 30px;
+    height: 30px;
+}
+
+nav {
+    background-color: #002244; /* Darker blue */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none; /* Hidden by default on mobile */
+    flex-direction: column;
+}
+
+nav ul.open {
+    display: flex;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    background-color: var(--accent-color);
+}
+
+main {
+    padding: 1.5rem 0;
+}
+
+h1, h2 {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.card {
+    background-color: var(--card-bg);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+#about-me .card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.student-photo {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto;
+    border: 4px solid var(--accent-color);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#courses .filter-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+#courses .filter-buttons button {
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--accent-color);
+    background-color: var(--card-bg);
+    color: var(--accent-color);
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#courses .filter-buttons button:hover, #courses .filter-buttons button.active {
+    background-color: var(--accent-color);
+    color: white;
+}
+
+#course-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.course-card {
+    background-color: var(--card-bg);
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 500;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: transform 0.2s;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+}
+
+.course-card.completed {
+    background-color: var(--completed-bg);
+    border-color: var(--completed-border);
+    position: relative;
+}
+
+.course-card.completed::before {
+    content: '✔';
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #28a745;
+    font-weight: bold;
+}
+
+#credit-total {
+    margin-top: 1rem;
+    font-weight: bold;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.75rem;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+.social-links {
+    margin-bottom: 1rem;
+}
+
+.social-links a {
+    color: white;
+    margin: 0 0.75rem;
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+.social-links a:hover {
+    opacity: 0.8;
+}
+
+.social-links svg {
+    width: 24px;
+    height: 24px;
+}
+
+footer p {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+}
+
+#lastModified {
+    color: #ccc;
+}
+
+
+/* Larger Screens (larger.css) */
+@media (min-width: 768px) {
+    #menu-button {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    nav ul li {
+        flex-grow: 0;
+    }
+
+    #about-me .card-content {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .about-text {
+        flex: 2;
+    }
+
+    .student-photo {
+        flex: 1;
+        max-width: 200px;
+        height: 200px;
+        margin: 0;
+    }
+
+    #course-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    #course-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+

@@ -23,40 +23,60 @@
         <link rel="stylesheet" href="styles/main.css">
     
         <script src="scripts/main.js" defer></script>
+        <script src="scripts/directory.js" defer></script>
     </head>
 
     <body>
-
-        <!-- Cabeçalho e Menu de Navegação -->
-           <nav>
-            <div class="nav-content">
-                <!-- Logótipo -->
-                <a href="#" class="logo">
-                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2">
-                       <path d="M50 10 L90 35 V 85 L50 60 L10 85 V 35 Z" fill="#FFFFFF"/>
-                       <path d="M50 10 L90 35 L50 60 L10 35 Z" fill="#D4AF37"/>
-                    </svg>
-                    <span class="logo-text">Grande Vitória Chamber of Commerce</span>
-                </a>
-
-                <!-- Botão do Menu Hambúrguer para Mobile -->
-                <div class="mobile-menu-button-container">
-                    <button id="menu-btn" type="button" class="mobile-menu-button">
-                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        <header>
+            <!-- Navbar -->
+            <nav>
+                <div class="nav-content">
+                    <!-- Logo -->
+                    <a href="#" class="logo">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2">
+                        <path d="M50 10 L90 35 V 85 L50 60 L10 85 V 35 Z" fill="#FFFFFF"/>
+                        <path d="M50 10 L90 35 L50 60 L10 35 Z" fill="#D4AF37"/>
                         </svg>
-                    </button>
-                </div>
+                        <span class="logo-text">Grande Vitória Chamber of Commerce</span>
+                    </a>
 
-                <!-- Menu de Navegação -->
-                <ul id="main-menu" class="main-menu">
-                    <li><a href="chamber_home.html">Home</a></li>
-                    <li><a href="discover.html" class="active">discover</a></li>
-                    <li><a href="#">Business Directory</a></li>
-                    <li><a href="#">Join</a></li>
-                 </ul>
+                    <!-- Hamburger Button -->
+                    <div class="mobile-menu-button-container">
+                        <button id="menu-btn" type="button" class="mobile-menu-button">
+                            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    
+                    <ul id="main-menu" class="main-menu">
+                        <li><a href="chamber_home.html">Home</a></li>
+                        <li><a href="discover.html" class="active">discover</a></li>
+                        <li><a href="#">Business Directory</a></li>
+                        <li><a href="#">Join</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main class="container">
+            <h1>Business Directory</h1>
+            
+            <div class="view-controls">
+                <button id="grid-btn" class="active">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M4 4h4v4H4zm6 0h4v4h-4zm6 0h4v4h-4zM4 10h4v4H4zm6 0h4v4h-4zm6 0h4v4h-4zM4 16h4v4H4zm6 0h4v4h-4zm6 0h4v4h-4z"/></svg>
+                    Grid
+                </button>
+                <button id="list-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"/></svg>
+                    List
+                </button>
             </div>
-        </nav>
+            
+            <div id="members-container" class="grid-view">
+                </div>
+        </main>
 
         <footer>
             <div class="container footer-content">

@@ -4,17 +4,17 @@
     "industry": "Steel Manufacturing",
     "address": "Av. Brigadeiro Eduardo Gomes, nº 526 - Polo Industrial Tubarão, Serra - ES, CEP: 29160-904",
     "phone_number": "+55 (27) 3348-1333",
-    "website_url": "https://cdn.imgbin.com/5/7/15/imgbin-logo-luxembourg-arcelormittal-mittal-steel-company-virtual-coil-4j63TqkefANRNtt9uYBwussj3.jpg",
-    "image_file_name": "arcelormittal-logo.png",
+    "website_url": "https://brasil.arcelormittal.com/en",
+    "image_file_name": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Arcelormittal-logo.svg",
     "notes": "One of the world's leading steel and mining companies, with a major industrial complex in Serra."
   },
   {
     "name": "Vale S.A.",
     "industry": "Mining",
-    "address": "(Corporate offices are located elsewhere, but the main operational hub is the Tubarão Complex in Vitória)",
-    "phone_number": "0800 285 7000 (General contact line)",
+    "address": "Av. Dante Michelini, 5500 - Jardim Camburi, Vitória - ES, 29090-860",
+    "phone_number": "0800 285 7000 ",
     "website_url": "https://vale.com/",
-    "image_file_name": "https://icon2.cleanpng.com/20180413/bhw/kisspng-nyse-vale-pelletizing-company-iron-ore-rio-5ad0f6a13d2a69.1979194715236440652505.jpg",
+    "image_file_name": "https://upload.wikimedia.org/wikipedia/pt/thumb/c/cc/Logotipo_Vale.svg/2560px-Logotipo_Vale.svg.png",
     "notes": "A global leader in iron ore production, with significant port and railway operations in Vitória."
   },
   {
@@ -23,7 +23,7 @@
     "address": "Praça Meyerfreund, 1 - Glória, Vila Velha - ES, CEP: 29122-900",
     "phone_number": "+55 (27) 3320-1502",
     "website_url": "https://www.garoto.com.br/",
-    "image_file_name": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTODMg-gLrwCoOrykalvZtPDs1RMzgpwkyong&s",
+    "image_file_name": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdC2-QkDr_dbkMO-boDk7ONYTrotX_6nGZDQ&s",
     "notes": "A historic and iconic Brazilian chocolate manufacturer founded in Vila Velha."
   },
   {
@@ -36,19 +36,19 @@
     "notes": "A leading company in logistics solutions, including fleet management, charter services, and urban mobility."
   },
   {
-    "name": "Wine",
-    "industry": "E-commerce & Retail (Wines)",
-    "address": "Rua Comendador Alcides Simão Helou, 1478, Civit I, Serra - ES, CEP: 29168-090",
-    "phone_number": "(No direct corporate phone listed, primary contact is via website/app)",
-    "website_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqATE-mEfSmGbZ9SsPxGiDokXB3KZAPO-HYw&s",
-    "image_file_name": "wine-logo.png",
-    "notes": "One of the largest online wine clubs in the world, with its headquarters in Serra."
+    "name": "Tekeat",
+    "industry": "Technology (Self-Service Solutions)",
+    "address": "Rua José Alexandre Buaiz, 300, Ed. Work Center, sala 1301, Enseada do Suá, Vitória - ES, CEP: 29050-545",
+    "phone_number": "+55 (27) 4042-2372",
+    "website_url": "https://www.tekeat.com.br/",
+    "image_file_name": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR28mm7GGOqpR5AhglHlmFrx2RgYnBqi4EKTg&s",
+    "notes": "A technology company based in Vitória that specializes in self-service solutions like ordering totems and QR code systems for the food and beverage industry."
   },
   {
     "name": "Unimed Vitória",
     "industry": "Healthcare",
     "address": "Av. Cezar Hilal, 700 - Bento Ferreira, Vitória - ES, CEP: 29050-903",
-    "phone_number": "0800 026 0080 (24-hour service) / (27) 3134-5000 (Plan Sales)",
+    "phone_number": "0800 026 0080",
     "website_url": "https://www.unimed.coop.br/site/web/vitoria",
     "image_file_name": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Logo_unimed1.svg/1280px-Logo_unimed1.svg.png",
     "notes": "A major health insurance cooperative providing medical and hospital services throughout the region."

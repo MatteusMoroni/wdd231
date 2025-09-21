@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Chamber of Commerce in vitória - Find local businesses and services in our directory. ">
         <meta name="author" content="Matteus Moroni">
-        <title>WDD 231 - Chamber of Commerce in vitória Directory</title>
+        <title>WDD 231 - Chamber of Commerce in vitória </title>
         <link rel="icon" type="image/x-icon" href="images/favicon.png">
 
         <!--FaceBook social media meta setting-->
@@ -21,10 +21,12 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
         <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/index.css">
     
-  
         <script src="scripts/main.js" defer></script>
-        <script src="scripts/directory.js" type="module" defer></script>
+        <!--<script src="scripts/directory.js" defer></script>-->
+        <script src="scripts/weather.js" defer></script>
+        <script src="scripts/index-cards-company-handler.js" type="module" defer></script>
     </head>
 
     <body>
@@ -51,32 +53,59 @@
                     </div>
 
                     
-                    <ul id="main-menu" class="main-menu">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="discover.html" class="active">discover</a></li>
-                        <li><a href="directory.html">Business Directory</a></li>
-                        <li><a href="#">Join</a></li>
-                    </ul>
+                    <div id="mobile-menu">
+                        <ul id="main-menu" class="main-menu">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="discover.html" class="active">discover</a></li>
+                            <li><a href="directory.html">Business Directory</a></li>
+                            <li><a href="#">Join</a></li>
+                        </ul>
+                    </div>
                 </div>
             </nav>
         </header>
 
-        <main class="container">
-            <h1>Business Directory</h1>
-            
-            <div class="view-controls">
-                <button id="grid-btn" class="active">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M4 4h4v4H4zm6 0h4v4h-4zm6 0h4v4h-4zM4 10h4v4H4zm6 0h4v4h-4zm6 0h4v4h-4zM4 16h4v4H4zm6 0h4v4h-4zm6 0h4v4h-4z"/></svg>
-                    Grid
-                </button>
-                <button id="list-btn">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"/></svg>
-                    List
-                </button>
-            </div>
-            
-            <div id="members-container" class="grid-view">
-            </div>
+        <main>
+            <section class="home-hero">
+                <div class="hero-content">
+                    <h1>Welcome to the Grande Vitória Chamber of Commerce</h1>
+                    <p>Join a powerful network of local leaders and access exclusive resources to help your business thrive.</p>
+                    <a href="#join" class="btn-primary">Become a Member</a>
+
+                </div>
+
+                <div class="hero-image">
+                    <img src="images/hero-image.png" alt="Vitoria city ">
+                </div>
+            </section>
+
+            <section class="main-home">
+                <h2>Home</h2>
+                <div class="home-contents">
+                    <div class="home-events home-content">
+                        <div class="home-content-title">
+                            <h3>Events</h3>
+                        </div>
+                    </div>
+                    <div class="home-current-weather home-content">
+                        <div class="home-content-title">
+                            <h3>Current Weather</h3>
+                        </div>
+                        <div id="current-weather-content"></div>
+                    </div>
+                    <div class="home-weather-forecast home-content">
+                        <div class="home-content-title">
+                            <h3>Weather Forecast</h3>
+                        </div>
+                        <div id="forecast-content"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="home-members-directory">
+                <div id="cards-container"></div>
+            </section>
+
         </main>
 
         <footer>

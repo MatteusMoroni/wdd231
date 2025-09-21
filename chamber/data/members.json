@@ -1,6 +1,7 @@
 [
   {
-    "name": "ArcelorMittal Tubarão",
+    "name": "Arcelor Mittal Tubarão",
+    "email":"info@arcelor.com",
     "industry": "Steel Manufacturing",
     "address": "Av. Brigadeiro Eduardo Gomes, nº 526 - Polo Industrial Tubarão, Serra - ES, CEP: 29160-904",
     "phone_number": "+55 (27) 3348-1333",
@@ -19,6 +20,7 @@
   },
   {
     "name": "Chocolates Garoto",
+    "email":"info@chocogaroto.com",
     "industry": "Food & Beverage",
     "address": "Praça Meyerfreund, 1 - Glória, Vila Velha - ES, CEP: 29122-900",
     "phone_number": "+55 (27) 3320-1502",
@@ -28,6 +30,7 @@
   },
   {
     "name": "Vix Logística",
+    "email":"info@vixlogistica.com",
     "industry": "Logistics and Transportation",
     "address": "Av. Jerônimo Vervloet, 345 - Maria Ortiz, Vitória - ES, CEP: 29075-140",
     "phone_number": "+55 (27) 2125-1723",
@@ -37,6 +40,7 @@
   },
   {
     "name": "Tekeat",
+    "email":"info@takeat.com",
     "industry": "Technology (Self-Service Solutions)",
     "address": "Rua José Alexandre Buaiz, 300, Ed. Work Center, sala 1301, Enseada do Suá, Vitória - ES, CEP: 29050-545",
     "phone_number": "+55 (27) 4042-2372",
@@ -46,20 +50,12 @@
   },
   {
     "name": "Unimed Vitória",
+    "email":"info@unimed.com",
     "industry": "Healthcare",
     "address": "Av. Cezar Hilal, 700 - Bento Ferreira, Vitória - ES, CEP: 29050-903",
     "phone_number": "0800 026 0080",
-    "website_url": "https://www.unimed.coop.br/site/web/vitoria",
+    "website_url": "https://www.unimed.coop.br",
     "image_file_name": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Logo_unimed1.svg/1280px-Logo_unimed1.svg.png",
     "notes": "A major health insurance cooperative providing medical and hospital services throughout the region."
-  },
-  {
-    "name": "Shopping Vitória",
-    "industry": "Retail & Entertainment",
-    "address": "Av. Américo Buaiz, 200 - Enseada do Suá, Vitória - ES, CEP: 29050-902",
-    "phone_number": "+55 (27) 3335-1000",
-    "website_url": "https://www.shoppingvitoria.com.br/",
-    "image_file_name": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSywdJBoAK1cHinGoEnLHjSbXRNl0fUPG_cAg&s",
-    "notes": "One of the largest and most important shopping centers in the state, serving as a major hub for commerce and leisure."
   }
 ]

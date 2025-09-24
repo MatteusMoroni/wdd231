@@ -56,11 +56,7 @@
 }
 
 .main-home {
-<<<<<<< HEAD
     padding: 1.5rem;
-=======
-    padding: 3rem 1.5rem;
->>>>>>> 449699032b40aa98441a87f4b90ab2d505c3e1c2
 }
 
 .main-home h2 {
@@ -109,12 +105,6 @@
     grid-column: span 1 ;
 }
 
-<<<<<<< HEAD
-=======
-/* index.css */
-
-/* Add these new styles at the end of the file */
->>>>>>> 449699032b40aa98441a87f4b90ab2d505c3e1c2
 
 #current-weather-content,
 #forecast-content {
@@ -123,11 +113,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-<<<<<<< HEAD
     flex-grow: 1; 
-=======
-    flex-grow: 1; /* Allows content to fill the card's space */
->>>>>>> 449699032b40aa98441a87f4b90ab2d505c3e1c2
 }
 
 #current-weather-content p {
@@ -171,7 +157,6 @@
     margin: 0.5rem 0;
 }
 
-<<<<<<< HEAD
 .home-members-directory {
     padding: 1.5rem;
 }
@@ -256,8 +241,6 @@
 }
 
 
-=======
->>>>>>> 449699032b40aa98441a87f4b90ab2d505c3e1c2
 @media (max-width: 768px) {
   /* Hero section mobile styles */
   .home-hero {
@@ -277,7 +260,6 @@
     }
   }
 
-<<<<<<< HEAD
   #cards-container {
     display: flex;
     flex-direction: column;
@@ -299,8 +281,6 @@
     }
   
 
-=======
->>>>>>> 449699032b40aa98441a87f4b90ab2d505c3e1c2
   .hero-image {
     order: -1;
     max-height: 350px;

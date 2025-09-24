@@ -26,7 +26,7 @@ const displayMemberCards = (members) => {
                 <div class="member-card-details">
                     <p> ${member.email}</p>
                     <p> ${member.phone_number}</p>
-                    <p> <a href="${member.website_url}" target="_blank">${member.website_url}</a></p>
+                    <p style="word-break: break-all;"> <a href="${member.website_url}" target="_blank">${member.website_url}</a></p>
                 </div>
             </div>
 

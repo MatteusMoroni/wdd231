@@ -180,27 +180,11 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // --- NEW FORM SUBMISSION LOGIC ---
     const form = document.getElementById('membership-form');
     if (form) {
-        form.addEventListener('submit', function(event) {
-            // Prevent the default form submission behavior
-            event.preventDefault();
+        form.addEventListener('submit', function() {
 
-            // Set the value of the hidden timestamp field to the current date and time
-            const timestampInput = document.getElementById('timestamp');
-            if (timestampInput) {
-                timestampInput.value = new Date().toISOString();
-            }
-
-            // Create a FormData object from the form
-            const formData = new FormData(form);
-            
-            // Create a URLSearchParams object to build the query string
-            const params = new URLSearchParams(formData);
-
-            // Redirect to the thank you page with the form data as URL parameters
-            window.location.href = `thankyou.html?${params.toString()}`;
+            document.getElementById('timestamp').value = new Date().toISOString();
         });
     }
 });

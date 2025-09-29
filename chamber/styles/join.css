@@ -26,6 +26,7 @@
     font-size: 1.1rem;
     line-height: 1.6;
     padding: 0 1rem;
+    text-align: center;
 }
 
 .card-container:hover {
@@ -586,6 +587,7 @@ INFO SECTION STYLES open
     
     .join-form p {
         font-size: 1rem;
+        text-align: center;
     }
 
     .info-section {

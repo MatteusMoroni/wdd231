@@ -7,6 +7,28 @@
     column-gap: 2rem;
 }
 
+#site-notice {
+    background-color: #fff3cd; /* Um amarelo suave e amigável */
+    color: #664d03;
+    text-align: center;
+    padding: 12px 15px;
+    border-bottom: 1px solid #ffecb5;
+    width: 100%;
+    box-sizing: border-box;
+    /* Se o seu header for fixo/sticky, você pode precisar ajustar a posição dele */
+}
+
+#site-notice p {
+    margin: 0;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+#site-notice strong {
+    margin-right: 8px;
+}
+
+
 .card-container {
     background-color: var(--white);
     border: 1px solid #e2e8f0;

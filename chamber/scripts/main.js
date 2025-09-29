@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const menuBtn = document.getElementById('menu-btn');
+    const menuBtn = document.getElementById('menu-button');
   
 
     const mobileMenu = document.getElementById('main-menu'); 

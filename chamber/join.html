@@ -3,20 +3,18 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Chamber of Commerce in vitória - Find local businesses and services in our directory. ">
+        <meta name="description" content="Chamber of Commerce in vitória - Join us and unlock exclusive benefits for your business!">
         <meta name="author" content="Matteus Moroni">
-        <title>WDD 231 - Chamber of Commerce in vitória </title>
-        <link rel="icon" type="image/x-icon" href="images/favicon.png">
+        <title>WDD 231 - Chamber of Commerce in vitória - Join page</title>
+        <link rel="icon" href="images/favicon.png" type="image/x-icon">
 
-        <!--FaceBook social media meta setting-->
-        <meta property="og:title" content="WDD 231 - Chamber Directory Page">
-        <meta property="og:description" content=" Chamber of Commerce in vitória - Find local businesses and services in our directory.">
-        <meta property="og:image" content="images/matteus_moroni_photo.png">
+        <meta property="og:title" content="Chamber Join Page">
+        <meta property="og:description" content=" Chamber of Commerce in vitória - Join us and unlock exclusive benefits for your business!">
+        <meta property="og:image" content="images/logo.png">
         <meta property="og:type" content="website">
         <meta property="og:url" content="https://matteusmoroni.github.io/wdd231/chamber/directory.html">
 
 
-        <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -24,18 +22,15 @@
         <link rel="stylesheet" href="styles/join.css">
     
         <script src="scripts/main.js" defer></script>
-        <!--<script src="scripts/directory.js" defer></script>-->
         <script src="scripts/join.js" defer></script>
  
     </head>
 
     <body>
         <header>
-            <!-- Navbar -->
             <nav>
                 <div class="nav-content">
-                    <!-- Logo -->
-                    <a href="#" class="logo">
+                    <a href="index.html" class="logo">
                         <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2">
                         <path d="M50 10 L90 35 V 85 L50 60 L10 85 V 35 Z" fill="#FFFFFF"/>
                         <path d="M50 10 L90 35 L50 60 L10 35 Z" fill="#D4AF37"/>
@@ -43,9 +38,8 @@
                         <span class="logo-text">Grande Vitória Chamber of Commerce</span>
                     </a>
 
-                    <!-- Hamburger Button -->
                     <div class="mobile-menu-button-container">
-                        <button id="menu-btn" type="button" class="mobile-menu-button">
+                        <button id="menu-button" type="button" class="mobile-menu-button">
                             <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
                             </svg>
@@ -55,133 +49,118 @@
                     
                     <ul id="main-menu" class="main-menu">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="discover.html" class="active">discover</a></li>
+                        <li><a href="discover.html">Discover</a></li>
                         <li><a href="directory.html">Business Directory</a></li>
-                        <li><a href="join.html">Join</a></li>
+                        <li><a href="join.html" class="active">Join</a></li>
                     </ul>
                 </div>
             </nav>
         </header>
 
         <main id="join-main">
-            <section class="join-form">
+            <section class="join-form card-container">
                 <h1>Join the Grande Vitória Chamber of Commerce</h1>
                     <p>Become a member today and unlock exclusive benefits for your business!</p>
-                    <form id="membership-form">
+                    <form id="membership-form" novalidate>
                         <h3 class="form-title">Personal information</h3>
                         
                         <div class="form-personal-name">
                             <div>
-                                <label for="firstName" class="form-label">First Name:</label>
-                                <input class="form-input" name="firstName" id="firstName" type="text" autocomplete="given-name" />
+                                <label for="firstName" class="form-label" >First Name:</label>
+                                <input class="form-input" name="firstName" placeholder="John" id="firstName" type="text" autocomplete="given-name" required />
                             </div>
                             <div>
                                 <label for="lastName" class="form-label">Last Name:</label>
-                                <input name="lastName" class="form-input" id="lastName" type="text" autocomplete="family-name" />
+                                <input name="lastName" class="form-input" id="lastName" placeholder="Doe" type="text" autocomplete="family-name" required />
                             </div>
+                            
                         </div>
                         
                         <div class="form-personal-contact">
                             <div>
                                 <label for="email" class="form-label">Email:</label>
-                                <input type="email" class="form-input" id="email" name="email" required>
+                                <input type="email" class="form-input" id="email" name="email" placeholder="example@email.com" required>
                             </div>
                             <div>
                                 <label for="phone-number" class="form-label">Phone Number:</label>
-                                <input type="tel" id="phone-number" class="form-input" name="phone-number" required>
+                                <input type="tel" id="phone-number" class="form-input" name="phone-number" placeholder="(xxx) xxx-xxxx" required>
                             </div>
+                        </div>
+                        <div>
+                            <label for="organizational-title" class="form-label">Organizational Title</label>
+                            <input type="text" id="organizational-title" class="form-input" placeholder="ex.: Project Manager" name="organizational-title" required>
                         </div>
                         
                         <h3 class="form-title">Business Information</h3>
                         <label for="business-name" class="form-label">Business Name:</label>
-                        <input type="text" id="business-name" class="form-input" name="business-name" required>
+                        <input type="text" id="business-name" class="form-input" placeholder="Amazon Inc." name="business-name" required>
 
 
                         <label for="membership-level" class="form-label">Membership Level:</label>
                         <select id="membership-level" class="form-input" name="membership-level" required>
                             <option value="">Select a level</option>
-                            <option value="basic">Bronze</option>
-                            <option value="premium">Silver</option>
-                            <option value="elite">Gold</option>
+                            <option value="non-profit">Non Profit</option>
+                            <option value="bronze">Bronze</option>
+                            <option value="silver">Silver</option>
+                            <option value="gold">Gold</option>
                         </select>
 
-                        <label for="additional-info" class="form-label">description:</label>
+                        <label for="additional-info" class="form-label">Description:</label>
                         <textarea id="additional-info" name="additional-info" rows="4" placeholder="Tell us more about your business or any specific needs you have."></textarea>
-                        <input type="hidden" id="timestamp" name="timestamp" value="">
+                        
+                        <input type="hidden" id="timestamp" name="timestamp">
 
                         <button type="submit">Submit Application</button>
                     </form>
 
             </section>
 
-            <section class="info-section">
+            <section class="info-section card-container">
                 <h2>Membership Levels</h2>
                 <div class="membership-levels-container">
                     
                     <div class="membership-level">
                         <div class="membership-card">
                             <div class="membership-card-content">
-                                <div class="membership-badge">NP</div>
                                 <h4>Non Profit Membership Level</h4>
                             </div>
                             <button id="openDialogBtn-1" class="dialog-open-btn">Learn More</button>
                         </div>
-                        <dialog id="infoDialog-1">
-                            <button id="closeDialogBtn-1" class="dialog-close-btn">&times;</button>
-                            <h3>Non Profit Membership</h3>
-                            <p>Designed for non-profit organizations...</p>
-                        </dialog>
+                        <dialog id="infoDialog-1"></dialog>
                     </div>
 
                     <div class="membership-level">
                         <div class="membership-card">
                             <div class="membership-card-content">
-                                <div class="membership-badge">BR</div>
-                                <h4>Bronze Membership Level</h4>
+                               <h4>Bronze Membership Level</h4>
                             </div>
                             <button id="openDialogBtn-2">Learn More</button>
                         </div>
-                        <dialog id="infoDialog-2">
-                            <button id="closeDialogBtn-2" class="dialog-close-btn">&times;</button>
-                            <h3>Bronze Membership</h3>
-                            <p>Perfect for small businesses...</p>
-                        </dialog>
+                        <dialog id="infoDialog-2"></dialog>
                     </div>
 
                     <div class="membership-level">
                         <div class="membership-card">
                             <div class="membership-card-content">
-                                <div class="membership-badge">SL</div>
                                 <h4>Silver Membership Level</h4>
                             </div>
                             <button id="openDialogBtn-3">Learn More</button>
                         </div>
-                        <dialog id="infoDialog-3">
-                            <button id="closeDialogBtn-3" class="dialog-close-btn">&times;</button>
-                            <h3>Silver Membership</h3>
-                            <p>Ideal for growing companies...</p>
-                        </dialog>
+                        <dialog id="infoDialog-3"></dialog>
                     </div>
 
                     <div class="membership-level">
                         <div class="membership-card">
                             <div class="membership-card-content">
-                                <div class="membership-badge">AU</div>
                                 <h4>Gold Membership Level</h4>
                             </div>
                             <button id="openDialogBtn-4">Learn More</button>
                         </div>
-                        <dialog id="infoDialog-4">
-                            <button id="closeDialogBtn-4" class="dialog-close-btn">&times;</button>
-                            <h3>Gold Membership</h3>
-                            <p>Premium benefits for established businesses...</p>
-                        </dialog>
+                        <dialog id="infoDialog-4"></dialog>
                     </div>
 
                 </div>
             </section>
- 
-
         </main>
 
         <footer>
@@ -212,7 +191,5 @@
                 </div>
             </div>
         </footer>
-
-
     </body>
 </html>

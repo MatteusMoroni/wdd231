@@ -1,14 +1,14 @@
-/* Layout Principal da Página Discover */
+/* Main Layout for the Discover Page */
 .discover-main {
     display: grid;
-    grid-template-columns: 1fr; /* Layout de uma coluna para mobile por padrão */
+    grid-template-columns: 1fr; /* Single column layout for mobile by default */
     gap: 1.5rem;
     padding: 1.5rem;
     max-width: 1280px;
     margin: 0 auto;
 }
 
-/* Barra Lateral (Sidebar) */
+/* Sidebar */
 .sidebar {
     background-color: var(--white);
     padding: 1.5rem;
@@ -23,7 +23,7 @@
     margin-bottom: 1rem;
 }
 
-/* Galeria de Cartões */
+/* Card Gallery */
 .gallery {
     display: grid;
     grid-template-columns: 1fr;
@@ -50,7 +50,7 @@
     padding: 1.5rem;
     display: flex;
     flex-direction: column;
-    flex-grow: 1; /* Faz o figcaption preencher o espaço */
+    flex-grow: 1; /* Makes the figcaption fill the available space */
 }
 
 .card h2 {
@@ -66,7 +66,7 @@
 }
 
 .card p {
-    flex-grow: 1; /* Empurra o botão para baixo */
+    flex-grow: 1; /* Pushes the button to the bottom */
     margin-bottom: 1rem;
 }
 
@@ -77,7 +77,7 @@
     padding: 0.75rem 1.5rem;
     border-radius: 4px;
     cursor: pointer;
-    align-self: flex-start; /* Alinha o botão à esquerda */
+    align-self: flex-start; /* Aligns the button to the left */
     transition: background-color 0.3s;
 }
 
@@ -86,10 +86,10 @@
     color: var(--prussian-blue);
 }
 
-/* Layout para Telas Médias (Tablet) */
+/* Layout for Medium Screens (Tablet) */
 @media (min-width: 641px) {
     .discover-main {
-        /* Usando 'grid-template-areas' como pedido na atividade */
+        /* Using 'grid-template-areas' as requested in the assignment */
         grid-template-areas:
             "sidebar gallery gallery"
             "sidebar gallery gallery";
@@ -102,11 +102,11 @@
 
     .gallery {
         grid-area: gallery;
-        grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+        grid-template-columns: repeat(2, 1fr); /* 2 columns */
     }
 }
 
-/* Layout para Telas Grandes (Desktop) */
+/* Layout for Large Screens (Desktop) */
 @media (min-width: 1025px) {
     .discover-main {
         grid-template-areas: "sidebar gallery gallery gallery";
@@ -114,10 +114,10 @@
     }
 
     .gallery {
-        grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+        grid-template-columns: repeat(3, 1fr); /* 3 columns */
     }
 
-    /* Efeito de hover apenas em telas maiores */
+    /* Hover effect only on larger screens */
     .card:hover img {
         transform: scale(1.05);
         filter: brightness(1.1);

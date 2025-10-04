@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // 1. Lógica para a mensagem de visita com localStorage
+    // 1. Logic for the visit message using localStorage
     const messageContainer = document.getElementById('visitor-message');
     const lastVisit = localStorage.getItem('lastVisit');
     const now = Date.now();
@@ -18,11 +18,11 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Salva a data da visita atual no localStorage
+    // Save the current visit date to localStorage
     localStorage.setItem('lastVisit', now.toString());
 
 
-    // 2. Lógica para buscar e exibir os dados do JSON
+    // 2. Logic to fetch and display data from JSON
     const gallery = document.getElementById('gallery');
     const jsonUrl = 'data/places.json';
 
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function displayPlaces(places) {
-        gallery.innerHTML = ''; // Limpa qualquer conteúdo existente
+        gallery.innerHTML = ''; // Clear any existing content
 
         places.forEach(place => {
             const card = document.createElement('figure');
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const img = document.createElement('img');
             img.src = place.image;
             img.alt = `Image of ${place.name}`;
-            img.loading = 'lazy'; // Atributo para lazy loading
+            img.loading = 'lazy'; // Attribute for lazy loading
 
             const figcaption = document.createElement('figcaption');
             

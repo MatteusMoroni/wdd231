@@ -1,0 +1,52 @@
+{
+  "places": [
+    {
+      "name": "Convento da Penha",
+      "address": "R. Vasco Coutinho, s/n - Prainha, Vila Velha - ES",
+      "description": "Um dos santuários religiosos mais antigos do Brasil, com uma vista panorâmica de tirar o fôlego de Vitória e Vila Velha.",
+      "image": "images/convento-da-penha.webp"
+    },
+    {
+      "name": "Fábrica de Chocolates Garoto",
+      "address": "Praça Henrique Meyerfreund, 1 - Glória, Vila Velha - ES",
+      "description": "Visite o museu de uma das marcas de chocolate mais famosas do Brasil e delicie-se com o tour pela fábrica.",
+      "image": "images/fabrica-garoto.webp"
+    },
+    {
+      "name": "Parque Estadual da Fonte Grande",
+      "address": "Acesso principal pela Rod. Serafim Derenzi - Grande Vitória, Vitória - ES",
+      "description": "Uma reserva de Mata Atlântica no coração de Vitória, perfeita para trilhas, ecoturismo e observação da cidade.",
+      "image": "images/fonte-grande.webp"
+    },
+    {
+      "name": "Praia da Costa",
+      "address": "Av. Antônio Gil Veloso - Praia da Costa, Vila Velha - ES",
+      "description": "Uma das praias urbanas mais belas e movimentadas, com um calçadão vibrante e águas claras.",
+      "image": "images/praia-da-costa.webp"
+    },
+    {
+      "name": "Paneleiras de Goiabeiras",
+      "address": "R. das Paneleiras, 55 - Goiabeiras, Vitória - ES",
+      "description": "Conheça o ofício tradicional das artesãs que produzem as autênticas panelas de barro, patrimônio cultural brasileiro.",
+      "image": "images/paneleiras.webp"
+    },
+    {
+      "name": "Parque Botânico Vale",
+      "address": "Av. dos Expedicionários, s/n - Jardim Camburi, Vitória - ES",
+      "description": "Uma grande área verde com orquidário, trilhas ecológicas e o primeiro Jardim Sensorial do estado.",
+      "image": "images/parque-vale.webp"
+    },
+    {
+      "name": "Terceira Ponte",
+      "address": "Ponte Deputado Darcy Castello de Mendonça, Vitória - Vila Velha, ES",
+      "description": "Um ícone da engenharia que liga as cidades de Vitória e Vila Velha, proporcionando vistas espetaculares da baía.",
+      "image": "images/terceira-ponte.webp"
+    },
+    {
+      "name": "Praça dos Namorados",
+      "address": "Av. Saturnino de Brito - Praia do Canto, Vitória - ES",
+      "description": "Local ideal para passeios, com feiras de artesanato e gastronomia nos fins de semana, e uma bela vista para o mar.",
+      "image": "images/praca-dos-namorados.webp"
+    }
+  ]
+}

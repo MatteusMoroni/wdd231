@@ -1,0 +1,125 @@
+/* Layout Principal da Página Discover */
+.discover-main {
+    display: grid;
+    grid-template-columns: 1fr; /* Layout de uma coluna para mobile por padrão */
+    gap: 1.5rem;
+    padding: 1.5rem;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* Barra Lateral (Sidebar) */
+.sidebar {
+    background-color: var(--white);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.sidebar h2 {
+    color: var(--prussian-blue);
+    border-bottom: 2px solid var(--prestige-gold);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Galeria de Cartões */
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.card {
+    background-color: var(--white);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.card figcaption {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Faz o figcaption preencher o espaço */
+}
+
+.card h2 {
+    color: var(--prussian-blue);
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.card address {
+    font-style: normal;
+    color: var(--gray-700);
+    margin-bottom: 1rem;
+}
+
+.card p {
+    flex-grow: 1; /* Empurra o botão para baixo */
+    margin-bottom: 1rem;
+}
+
+.card button {
+    background-color: var(--prussian-blue);
+    color: var(--white);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    align-self: flex-start; /* Alinha o botão à esquerda */
+    transition: background-color 0.3s;
+}
+
+.card button:hover {
+    background-color: var(--prestige-gold);
+    color: var(--prussian-blue);
+}
+
+/* Layout para Telas Médias (Tablet) */
+@media (min-width: 641px) {
+    .discover-main {
+        /* Usando 'grid-template-areas' como pedido na atividade */
+        grid-template-areas:
+            "sidebar gallery gallery"
+            "sidebar gallery gallery";
+        grid-template-columns: 1fr 2fr 2fr;
+    }
+    
+    .sidebar {
+        grid-area: sidebar;
+    }
+
+    .gallery {
+        grid-area: gallery;
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+    }
+}
+
+/* Layout para Telas Grandes (Desktop) */
+@media (min-width: 1025px) {
+    .discover-main {
+        grid-template-areas: "sidebar gallery gallery gallery";
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+    }
+
+    /* Efeito de hover apenas em telas maiores */
+    .card:hover img {
+        transform: scale(1.05);
+        filter: brightness(1.1);
+    }
+}
